@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" role="img" aria-labelledby="title description">
+  <title id="title">Illustrated portrait</title>
+  <desc id="description">A friendly, front-facing portrait of a brown-skinned man with short dark hair.</desc>
+  <defs>
+    <linearGradient id="backdrop" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#e4eee6"/>
+      <stop offset="1" stop-color="#c5d8ca"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2=".8" y2="1">
+      <stop stop-color="#a96c4c"/>
+      <stop offset="1" stop-color="#81503c"/>
+    </linearGradient>
+    <clipPath id="frame">
+      <rect width="480" height="480" rx="24"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="480" height="480" fill="url(#backdrop)"/>
+    <circle cx="378" cy="96" r="52" fill="#f3f0e2" opacity=".8"/>
+    <path d="M56 480c13-96 77-151 184-151s171 55 184 151" fill="#345a4b"/>
+    <path d="M190 302h100v74c-27 30-73 30-100 0z" fill="#81503c"/>
+    <path d="M143 198c0-83 42-129 98-129s98 46 98 129v55c0 70-43 117-98 117s-98-47-98-117z" fill="url(#skin)"/>
+    <path d="M137 211c-8-100 37-155 108-155 68 0 108 52 102 139-22-9-46-27-68-51-32 31-87 53-142 67z" fill="#282b2a"/>
+    <path d="M147 190c-17 1-27 15-24 34 3 19 14 31 27 33m187-67c17 1 27 15 24 34-3 19-14 31-27 33" fill="none" stroke="#81503c" stroke-width="15" stroke-linecap="round"/>
+    <path d="M171 214c10-8 22-8 32-1m74 0c10-7 22-7 32 1" fill="none" stroke="#392c28" stroke-width="7" stroke-linecap="round"/>
+    <ellipse cx="187" cy="231" rx="5" ry="7" fill="#272522"/>
+    <ellipse cx="293" cy="231" rx="5" ry="7" fill="#272522"/>
+    <path d="M235 238c-2 17-11 34-8 41 4 5 12 7 19 4" fill="none" stroke="#704632" stroke-width="5" stroke-linecap="round"/>
+    <path d="M208 298c17 14 48 14 65 0" fill="none" stroke="#633b32" stroke-width="6" stroke-linecap="round"/>
+    <path d="M179 314c18 32 40 46 61 46s43-14 61-46" fill="#81503c"/>
+    <path d="M145 413c31-30 65-45 95-45s64 15 95 45l40 67H105z" fill="#f7f5ec"/>
+    <path d="m193 374 47 64 47-64" fill="#fffdf8"/>
+    <path d="m240 438 17 42h-34z" fill="#c7d7ca"/>
+  </g>
+</svg>

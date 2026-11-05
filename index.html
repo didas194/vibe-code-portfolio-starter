@@ -4,26 +4,37 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- TODO: Change the title and description to your own -->
-  <title>Your Name | Portfolio</title>
-  <meta name="description" content="Personal portfolio of Your Name — student, builder, problem solver." />
+  <title>Arda | Portfolio</title>
+  <meta name="description" content="Arda's portfolio — student, builder, problem solver." />
 
   <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <div class="landmark-slideshow" aria-hidden="true">
+    <img class="landmark-slide is-active" src="assets/images/landmarks/singapore-cbd.jpg" alt="" />
+    <img class="landmark-slide" src="assets/images/landmarks/gardens-by-the-bay.jpg" alt="" />
+    <img class="landmark-slide" src="assets/images/landmarks/merlion.jpg" alt="" />
+    <img class="landmark-slide" src="assets/images/landmarks/singapore-flyer.jpg" alt="" />
+  </div>
 
   <!-- ============ NAVIGATION ============ -->
   <header class="site-header">
     <nav class="nav container">
-      <a href="#" class="nav-logo">YN</a>
+      <a href="#" class="nav-logo">Arda</a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      <div class="nav-tools">
+        <button class="slideshow-toggle" id="slideshow-toggle" type="button" aria-label="Pause landmark slideshow" aria-pressed="false" title="Pause landmark slideshow">Ⅱ</button>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      </div>
     </nav>
   </header>
 
@@ -31,24 +42,27 @@
 
     <!-- ============ HERO ============ -->
     <section class="hero container">
-      <p class="hero-greeting">Hi, I'm</p>
-      <!-- TODO: Put your name here -->
-      <h1 class="hero-name">Your Name</h1>
+      <p class="hero-greeting">Hello, I'm Arda <span class="hero-location">· based in Singapore</span></p>
+      <h1 class="hero-name">Arda</h1>
       <!-- TODO: One line about who you are -->
       <p class="hero-tagline">Student developer who likes building things on the web.</p>
       <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">See my work</a>
-        <a href="#contact" class="btn btn-outline">Get in touch</a>
+        <a href="#projects" class="btn btn-primary"><img src="assets/images/singapore-flag.svg" alt="" />See my work</a>
+        <a href="#contact" class="btn btn-outline"><img src="assets/images/singapore-flag.svg" alt="" />Get in touch</a>
       </div>
+      <img class="singapore-skyline" src="assets/images/singapore-skyline.svg" alt="Illustration of Singapore's Marina Bay, with Marina Bay Sands, the Singapore Flyer, a Merlion, and Gardens by the Bay Supertrees." />
     </section>
 
     <!-- ============ ABOUT ============ -->
     <section id="about" class="section container">
-      <h2 class="section-title">About Me</h2>
-      <div class="about-grid">
-        <!-- TODO: Replace with your own photo in assets/images/ -->
-        <img src="assets/images/profile-placeholder.svg" alt="Photo of Your Name" class="about-photo" />
-        <div>
+      <div class="section-heading">
+        <p class="section-kicker">A little about me</p>
+        <h2 class="section-title">A page from my journal</h2>
+      </div>
+      <div class="about-grid journal-page">
+        <img src="assets/images/arda-portrait.svg" alt="Illustrated portrait of a brown-skinned man" class="about-photo" />
+        <div class="journal-copy">
+          <p class="journal-date">NOTES FROM ME</p>
           <!-- TODO: Write 2–3 short paragraphs about yourself -->
           <p>
             I'm a student at <strong>Your School</strong> studying <strong>Your Course</strong>.
@@ -58,13 +72,17 @@
           <p>
             Outside of class, I enjoy <em>hobby one</em>, <em>hobby two</em>, and <em>hobby three</em>.
           </p>
+          <p class="journal-signoff">More curious every day, <span>✿</span></p>
         </div>
       </div>
     </section>
 
     <!-- ============ SKILLS ============ -->
     <section id="skills" class="section container">
-      <h2 class="section-title">Skills</h2>
+      <div class="section-heading">
+        <p class="section-kicker">things in my toolkit</p>
+        <h2 class="section-title">A few things I know</h2>
+      </div>
       <!-- TODO: List your real skills -->
       <ul class="skills-list">
         <li>HTML</li>
@@ -78,7 +96,10 @@
 
     <!-- ============ PROJECTS ============ -->
     <section id="projects" class="section container">
-      <h2 class="section-title">Projects</h2>
+      <div class="section-heading">
+        <p class="section-kicker">bits and pieces I’ve made</p>
+        <h2 class="section-title">Little projects, big ideas</h2>
+      </div>
       <div class="projects-grid">
 
         <!-- TODO: Copy this card for each project you want to show -->
@@ -114,13 +135,16 @@
 
     <!-- ============ CONTACT ============ -->
     <section id="contact" class="section container">
-      <h2 class="section-title">Contact</h2>
+      <div class="section-heading">
+        <p class="section-kicker">the next page is yours</p>
+        <h2 class="section-title">Let’s make something</h2>
+      </div>
       <p>Want to work together or just say hi? Find me here:</p>
       <!-- TODO: Put in your real links (delete any you don't use) -->
       <ul class="contact-links">
-        <li><a href="mailto:you@example.com">Email</a></li>
-        <li><a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a></li>
-        <li><a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="mailto:you@example.com"><img src="assets/images/singapore-flag.svg" alt="" />Email</a></li>
+        <li><a href="https://github.com/your-username" target="_blank" rel="noopener"><img src="assets/images/singapore-flag.svg" alt="" />GitHub</a></li>
+        <li><a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener"><img src="assets/images/singapore-flag.svg" alt="" />LinkedIn</a></li>
       </ul>
     </section>
 
@@ -128,7 +152,13 @@
 
   <!-- ============ FOOTER ============ -->
   <footer class="site-footer">
-    <p>© <span id="year"></span> Your Name. Built during the Vibe Code Your Portfolio workshop.</p>
+    <p class="photo-credits">
+      Background photos:
+      <a href="https://commons.wikimedia.org/wiki/File:Skylines_of_the_Central_Business_District,_Singapore_at_dusk.jpg" target="_blank" rel="noopener">Singapore skyline</a> by <a href="https://commons.wikimedia.org/wiki/User:Basile_Morin" target="_blank" rel="noopener">Basile Morin</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>;
+      <a href="https://commons.wikimedia.org/wiki/File:Supertree_Grove,_Gardens_by_the_Bay_(71591911).jpg" target="_blank" rel="noopener">Supertree Grove</a> by <a href="https://500px.com/VictorDam" target="_blank" rel="noopener">Victor Dam</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>;
+      <a href="https://commons.wikimedia.org/wiki/File:Singapore_(SG),_Merlion_--_2019_--_4692.jpg" target="_blank" rel="noopener">Merlion</a> and <a href="https://commons.wikimedia.org/wiki/File:Singapore_(SG),_Singapore_Flyer_--_2019_--_4491.jpg" target="_blank" rel="noopener">Singapore Flyer</a> by <a href="https://www.wikidata.org/wiki/Q34788025" target="_blank" rel="noopener">Dietmar Rabich</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>.
+    </p>
+    <p>© <span id="year"></span> Arda. Built during the Vibe Code Your Portfolio workshop.</p>
   </footer>
 
   <script src="js/main.js"></script>
